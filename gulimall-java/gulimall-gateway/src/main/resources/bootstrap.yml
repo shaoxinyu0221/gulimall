@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 81.68.64.142:8848
+        group: shaoxinyu
+
+logging:
+  pattern:
+    console: '%clr(%5level) %clr([%15thread]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
+
+
+
+
