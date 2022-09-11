@@ -1,5 +1,6 @@
 package com.gulimall.product.dao.po;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -70,6 +71,7 @@ public class Category implements Serializable {
      */
     private Integer productCount;
 
+    @TableField(exist = false)
     private List<Category> childrenList;
 
 
